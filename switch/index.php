@@ -24,7 +24,11 @@
           break;
         default:
           echo "a is not 0, 1, 2, or 3<br />";
+          $month ="";
           break;
+      }
+      if(!empty($month)){
+        echo "{$number} is a month of {$month}"
       }
     
     ?>
@@ -35,8 +39,10 @@
     // colons, semicolons and breaks do
     $year = 2013;
     switch (($year - 4) % 12) {
-      case  0: $zodiac = 'Rat';     break;
-      case  1: $zodiac = 'Ox';       break;
+      case  0: $month = 'January';     
+      break;
+      case  1: $zodiac = 'Ox';       
+      break;
       case  2: $zodiac = 'Tiger';   break;
       case  3: $zodiac = 'Rabbit';   break;
       case  4: $zodiac = 'Dragon';   break;

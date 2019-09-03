@@ -23,6 +23,17 @@ list($add_result, $subt_result) = add_subt(20,7);
 echo "Add: " . $add_result . "<br />";
 echo "Subt: " . $subt_result . "<br />";
 
+
+function trans($prodname,$price,$quantity,$cash){
+$total = $price * $quantity;
+$change = $cash - $total;
+return array($prodname,$total,$change);
+}
+
+$result = trans("tv stand", 2500, 1, 3000);
+echo "Product: {$result[0]}" . "<br>";
+echo "Total: {$result[1]}" . "<br>";
+echo "Change: {$result[2]}";
 ?>
 </body>
 </html>

@@ -21,7 +21,7 @@ say_hello_to($name);
 <?php
 
 function better_hello($greeting, $target, $punct) {
-  echo $greeting . " " . $target . $punct . "<br />";
+  echo "Welcome {$greeting} {$target}  {$punct} " . "<br />";
 }
 
 better_hello("Hello", $name, "!");

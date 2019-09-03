@@ -16,7 +16,9 @@ function add($val1, $val2) {
 
 $result1 = add(3,4);
 $result2 = add(5,$result1);
-echo $result2;
+$result3 = add($result1,$result2);
+echo $result3 . "<br>";
+echo "Result1? exist? " . isset($result4)
 
 ?>
 <br />

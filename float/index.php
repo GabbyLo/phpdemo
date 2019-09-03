@@ -7,15 +7,24 @@
     <title>Document</title>
 </head>
 <body>
-<?php //create a float value here ?>
+
+<?php $myfloat = 23.43451 ?><br>
 
 Round:round(value,1);
+<?php echo round($myfloat,2) ?><br>
 Ceiling: ceil(value);
+<?php echo ceil($myfloat) ?> <br>
 Floor: floor(value)
+<?php echo floor($myfloat) ?> <br>
 
 <?php $integer = 21 ?>
 
-<?php echo "Is {$integer} integer? " . is_int($integer) ?>
+<?php echo "Is {$integer} an integer? " . is_int($integer) ?> <br>
+<?php echo "Is {$integer} a float?" . is_float($integer) ?><br>
+
+<?php echo "Is {$integer} a numeric" . is_numeric($integer) ?> <br>
+
+<?php echo 3 + "5 little monkeys" ?>
 <!-- is_float -->
 <!-- is_numeric -->
  

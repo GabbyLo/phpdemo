@@ -52,5 +52,16 @@
     ?>
     
 
+      <?php 
+      $users = array(
+        "username" => "jdoe2019",
+        "password" => md5("P@ssw0rd"),
+        "created" => "2-3-19",
+        "account_type" => "premium",
+        "payment_type" => "annual",
+        "address" => "Ohio",
+        "active" => "yes"
+      )
+      ?>
   </body>
 </html>

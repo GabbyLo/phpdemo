@@ -8,10 +8,10 @@
   <body>
 
     <?php // while loop example
-      $count = 0;
-      while ($count <= 10) {
-        echo $count . ", ";
-        $count++;
+      $count = 100;
+      while ($count > 10) {
+        echo "hi DAVE" . ", ";
+        $count-=10;
       }
     ?>
     <br />

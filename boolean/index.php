@@ -10,22 +10,40 @@
     
     <?php 
     $result = true;
-    $result = false;
+    $result2 = false;
+    $myfloat = 23;
     ?>
 
     <!-- echo -->
 
     <!-- is_bool -->
+    <?php echo "Result is ". is_bool($result) ?> <br>
 
     <!-- if/isfloat -->
-
+   <?php 
+    if(is_float($myfloat))
+    {
+        echo "Yes it is float";
+    }
+   ?> <br>
     <!-- NULL AND EMPTY -->
-    isnull()
+    <!-- isnull() -->
     <?php 
     $var1 = null;
-    $var2 = "";
+    $var2 = "0";
+    echo "Is var 1 null? ". is_null($var1);
+    echo "<br>";
+    echo "Is var 2 null? ". is_null($var2);
+    echo "Is var 2 empty? ". empty($var2);
+    echo "<br>";
 
-    ?>
+    // $var3 = 200;
+    if(!isset($var3))
+    {
+        $var3 = 3000;
+    }
+    echo "Var 3 = " . $var3;
+    ?> <br>
 
 
 <!-- IS SET? -->

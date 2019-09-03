@@ -7,14 +7,12 @@
     <title>Document</title>
 </head>
 <body>
-    <?php echo "This is a text" ?><br>
-    <?php echo "My Name is " . "John Doe" ?><br>
-    <?php echo 255+200 ?><br>
 
-     <?php
-     echo "PHP:Hypertext Preprocessor" 
-    //  echo "This is a comment. Won't be shown" 
-     
-     ?> 
+  <?php
+  echo "Hello!" . "<br>";
+  $firstName = "John" . "<br>";
+  echo "Hello " . $firstName;
+  echo "Hello, goodevening {$firstName}"
+  ?>
 </body>
 </html>

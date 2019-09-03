@@ -7,11 +7,13 @@
     <title>Document</title>
 </head>
 <body>
-    Absolute Value: abs
-    Exponential: pow(base,exp)
-    Square Root: sqrt(value)
-    Modulo: fmod(float,float)
-    Random: rand();
-    Random(min,max): rand(min,max)
+
+    <?php $number = 200 ?>
+    Absolute Value: <?php echo abs($number-400) ?><br>
+    Exponential: pow(base,exp) <?php echo pow(2,10) ?> <br>
+    Square Root: sqrt(value) <?php echo sqrt(144) ?>   <br> 
+    Modulo: fmod(float,float) <?php echo fmod(2650,100) ?> <br>
+    Random: rand(); <?php echo rand() ?><br> 
+    Random(min,max): rand(min,max) <?php echo rand(0,100) ?><br>
 </body>
 </html>

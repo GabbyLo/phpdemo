@@ -16,12 +16,12 @@
   
     say_hello();
     
-    function say_hello_to($word) {
-      echo "Hello {$word}!<br />";
+    function say_hello_to($word,$greet) {
+      echo "Hello {$word} and {$greet}!<br />";
     }
-
-    say_hello_to("World");
-    say_hello_to("Everyone");
+    
+    say_hello_to("World","Goordmorning");
+    say_hello_to("Everyone","Hello");
     
     say_hello_loudly();
     
